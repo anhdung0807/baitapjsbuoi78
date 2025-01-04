@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>title</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="container mx-auto mt-10 w-1/2">
+    <h3 class="text-lg font-bold">
+      Cho người dùng nhập vào các số nguyên và lưu trữ trong mảng. Thiết kế
+      layout cho người dùng chọn thực hiện các chức năng bên dưới:
+      <p class="bg-blue-100 text-red-800 mt-3 p-3 rounded-md">
+        1. Tổng các số dương trong mảng.<br />
+        2. Đếm có bao nhiêu số dương trong mảng.<br />
+        3. Tìm số nhỏ nhất trong mảng.<br />
+        4. Tìm số dương nhỏ nhất trong mảng.<br />
+        5. Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì
+        trả về -1.<br />
+        6. Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn
+        đổi chỗ giá trị).<br />
+        7. Sắp xếp mảng theo thứ tự tăng dần.<br />
+        8. Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố
+        thì trả về – 1.<br />
+        9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số
+        nguyên?<br />
+        10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn.
+      </p>
+    </h3>
+
+    <input
+      type="number"
+      id="iSo"
+      class="block w-1/4 mt-3 p-2 border rounded-md"
+      placeholder="Nhập số"
+    />
+
+    <button
+      class="bg-green-500 text-white px-4 py-2 rounded-md mt-3 hover:bg-green-600"
+      id="kiemTra"
+    >
+      Thêm số
+    </button>
+
+    <div id="result"></div>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
